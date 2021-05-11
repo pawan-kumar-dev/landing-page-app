@@ -48,7 +48,7 @@ const SliderComponent = (props) => {
   };
   const classes = useStyles();
   return (
-    <div className={!props.numberOfSlides && classes.sliders}>
+    <div className={!props.numberOfSlides ? classes.sliders : ""}>
       <Slider ref={props.sliderRef} {...settings}>
         {props.children}
       </Slider>

@@ -41,8 +41,8 @@ const FeedbackSection = () => {
       <SliderComponent sliderRef={sliderRef} numberOfSlides={3}>
         {Array(12)
           .fill()
-          .map(() => (
-            <FeedbackCard />
+          .map((_, i) => (
+            <FeedbackCard key={i} />
           ))}
       </SliderComponent>
     </div>
