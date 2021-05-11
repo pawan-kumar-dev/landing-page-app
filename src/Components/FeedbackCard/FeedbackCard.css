@@ -1,0 +1,16 @@
+.feedBack {
+  background: linear-gradient(143.63deg, #276c73 5.43%, #5293e8 110.6%);
+  border-radius: 16px;
+  max-width: 360px;
+  width: 90%;
+  height: 270px;
+}
+
+.feedBack__inner {
+  background: #0a0b1a;
+  border: 2px solid #e5af56;
+  box-sizing: border-box;
+  border-radius: 16px;
+  top: 10px;
+  right: 10px;
+}

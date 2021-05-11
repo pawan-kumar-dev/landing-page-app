@@ -1,0 +1,14 @@
+.circularCard {
+  height: 240px;
+  width: 240px !important;
+  color: #fff;
+  border-width: 1px;
+  display: flex !important;
+  position: relative;
+}
+
+.circularCard.hightlight-border {
+  border: 1px solid #dd4cac;
+  border-left-color: white;
+  border-top: hidden;
+}

@@ -1,0 +1,28 @@
+.artistCard {
+  background: linear-gradient(163.41deg, #301a68 0.11%, #234c97 170.69%);
+  border-radius: 8px;
+  width: 268px;
+  height: 387px;
+}
+
+.artistCard__inner {
+  background: #111229;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  top: 10px;
+  right: 10px;
+}
+.artistCard__inner img {
+  height: 230px;
+}
+.artistCard__inner button .arrow {
+  transition: all 0.2s ease-in-out;
+}
+.artistCard__inner button:hover .arrow {
+  transform: translateX(10px);
+}
+
+.artistCard__inner .bookIcon {
+  border-left: 1px solid rgba(107, 99, 99, 0.4);
+  padding-left: 10px;
+}

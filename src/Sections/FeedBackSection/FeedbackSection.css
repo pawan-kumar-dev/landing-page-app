@@ -1,0 +1,20 @@
+.feedbackSection__title {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+  position: relative;
+}
+
+.feedbackSection__title::after {
+  content: " ";
+  background-color: #0259eb;
+  position: absolute;
+  width: 48px;
+  height: 3px;
+  bottom: -9px;
+  left: 0;
+  border-radius: 5px;
+}
