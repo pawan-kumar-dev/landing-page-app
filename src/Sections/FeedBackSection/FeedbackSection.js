@@ -21,7 +21,6 @@ const FeedbackSection = () => {
   };
   const previous = () => {
     if (sliderRef.current) {
-      console.log(sliderRef);
       sliderRef.current.slickPrev();
     }
   };
