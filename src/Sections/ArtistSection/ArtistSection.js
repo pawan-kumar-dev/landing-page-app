@@ -40,7 +40,7 @@ const ArtistSection = () => {
         <h1 className="text-white artistSection__title">Upcoming Shows</h1>
         <p className="text-jamYellow cursor-pointer">View All</p>
       </div>
-      <SliderComponent>
+      <SliderComponent artistSlider>
         {artistArray.map(({ id, name, tag, profilePic }) => (
           <ArtistCard key={id} name={name} tag={tag} profilePic={profilePic} />
         ))}

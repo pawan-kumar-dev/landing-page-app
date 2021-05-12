@@ -13,6 +13,11 @@ const useStyles = makeStyles({
     "& .slick-list": {
       width: "100%",
     },
+    "& .slick-slide": {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
 });
 const SliderComponent = (props) => {
@@ -35,7 +40,7 @@ const SliderComponent = (props) => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -48,7 +53,11 @@ const SliderComponent = (props) => {
   };
   const classes = useStyles();
   return (
-    <div className={!props.numberOfSlides ? classes.sliders : ""}>
+    <div
+      className={
+        !props.artistSlider && !props.feedbackSlider ? classes.sliders : ""
+      }
+    >
       <Slider ref={props.sliderRef} {...settings}>
         {props.children}
       </Slider>

@@ -14,7 +14,7 @@ function App() {
     <div className="app">
       <div className="app__banner">
         <NavbarSection />
-        <div className="max-w-7xl h-5/6 p-4 flex flex-col justify-between w-full mx-auto">
+        <div className="max-w-7xl p-4 flex flex-col justify-between w-full mx-auto">
           <BannerSection />
           <CircleCardSection />
         </div>

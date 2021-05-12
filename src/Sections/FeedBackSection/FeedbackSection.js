@@ -29,7 +29,7 @@ const FeedbackSection = () => {
     <div className="max-w-7xl p-4 pt-10 mb-14 w-full mx-auto">
       <div className="flex justify-between py-6 mb-4 items-center">
         <h1 className="text-white feedbackSection__title">Reviews</h1>
-        <div>
+        <div className="sm:hidden">
           <IconButton className={classes.iconButton} onClick={previous}>
             <ArrowBackIcon />
           </IconButton>
@@ -38,7 +38,7 @@ const FeedbackSection = () => {
           </IconButton>
         </div>
       </div>
-      <SliderComponent sliderRef={sliderRef} numberOfSlides={3}>
+      <SliderComponent sliderRef={sliderRef} feedbackSlider numberOfSlides={3}>
         {Array(12)
           .fill()
           .map((_, i) => (
